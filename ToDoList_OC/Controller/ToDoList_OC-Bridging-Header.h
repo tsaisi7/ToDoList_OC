@@ -3,3 +3,5 @@
 //
 
 #import "AppDelegate.h"
+#import "TaskData+CoreDataClass.h"
+#import "TaskData+CoreDataProperties.h"

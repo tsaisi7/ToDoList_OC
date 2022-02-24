@@ -6,12 +6,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HomeViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic) AppDelegate *appDelegate;
+@property (nonatomic) NSManagedObjectContext *manageObjectContext;
+@property (nonatomic) NSFetchRequest *fetchRequest;
+@property (nonatomic) NSEntityDescription *entity;
+@property (nonatomic) NSFetchedResultsController *controller;
 
 @end
 
