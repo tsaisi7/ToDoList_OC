@@ -9,6 +9,7 @@
 #import "TaskTableViewCell.h"
 #import "TaskData+CoreDataClass.h"
 #import "TaskData+CoreDataProperties.h"
+#import "ToDoList_OC-Swift.h"
 
 @interface HomeViewController () <UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate>
 
@@ -35,6 +36,16 @@
     [self.controller performFetch: &error];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqual: @"showDetail"]){
+
+        DetailViewController *detail = (DetailViewController*)segue.destinationViewController;
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        detail.indexPath = indexPath;
+        
+    }
+}
+
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller{
     [self.tableView reloadData];
 }
@@ -56,5 +67,18 @@
     return [[self.controller fetchedObjects]count];
 }
 
-
+- (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIContextualAction *deleteAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleDestructive title:nil handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
+        TaskData *taskData = [self.controller objectAtIndexPath:indexPath];
+        [self.manageObjectContext deleteObject:taskData];
+        NSError *error;
+        [self.manageObjectContext save:&error];
+        completionHandler(YES);
+    }];
+    deleteAction.image = [UIImage systemImageNamed:@"trash"];
+    deleteAction.backgroundColor = UIColor.systemRedColor;
+    UISwipeActionsConfiguration *configuration = [UISwipeActionsConfiguration configurationWithActions:@[deleteAction]];
+    configuration.performsFirstActionWithFullSwipe = NO;
+    return configuration;
+}
 @end

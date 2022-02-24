@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+@class DetailViewController;
 
 NS_ASSUME_NONNULL_BEGIN
 

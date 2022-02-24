@@ -3,10 +3,11 @@
     <entity name="TaskData" representedClassName="TaskData" syncable="YES">
         <attribute name="isDone" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="remind" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="taskDescription" optional="YES" attributeType="String"/>
         <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
     <elements>
-        <element name="TaskData" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="TaskData" positionX="-63" positionY="-18" width="128" height="104"/>
     </elements>
 </model>

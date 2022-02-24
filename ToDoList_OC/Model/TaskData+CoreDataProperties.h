@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<TaskData *> *)fetchRequest NS_SWIFT_NAME(fetchRequest());
 
+@property (nonatomic) BOOL remind;
 @property (nonatomic) BOOL isDone;
 @property (nullable, nonatomic, copy) NSString *name;
 @property (nullable, nonatomic, copy) NSString *taskDescription;

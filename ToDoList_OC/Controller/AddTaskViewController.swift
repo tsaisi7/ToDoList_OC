@@ -11,6 +11,8 @@ class AddTaskViewController: UIViewController {
     @IBOutlet var taskNameTextField: UITextField!;
     @IBOutlet var taskDescriptionTextView: UITextView!;
     @IBOutlet var taskDatePicker: UIDatePicker!;
+    @IBOutlet var remindSwitch: UISwitch!;
+
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     lazy var viewContext = appDelegate.persistentContainer.viewContext
