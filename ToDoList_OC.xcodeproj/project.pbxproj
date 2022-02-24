@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		66B7973F27C6641A00C9FA53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B7973E27C6641A00C9FA53 /* AppDelegate.m */; };
 		66B7974227C6641A00C9FA53 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B7974127C6641A00C9FA53 /* SceneDelegate.m */; };
-		66B7974527C6641A00C9FA53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B7974427C6641A00C9FA53 /* ViewController.m */; };
 		66B7974827C6641A00C9FA53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B7974627C6641A00C9FA53 /* Main.storyboard */; };
 		66B7974B27C6641A00C9FA53 /* ToDoList_OC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66B7974927C6641A00C9FA53 /* ToDoList_OC.xcdatamodeld */; };
 		66B7974D27C6641D00C9FA53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66B7974C27C6641D00C9FA53 /* Assets.xcassets */; };
 		66B7975027C6641D00C9FA53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B7974E27C6641D00C9FA53 /* LaunchScreen.storyboard */; };
 		66B7975327C6641D00C9FA53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B7975227C6641D00C9FA53 /* main.m */; };
+		66B7975F27C67BAD00C9FA53 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B7975E27C67BAD00C9FA53 /* HomeViewController.m */; };
+		66B7976227C67F7100C9FA53 /* TaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B7976127C67F7100C9FA53 /* TaskTableViewCell.m */; };
+		66B7976527C683E800C9FA53 /* TaskData.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B7976427C683E800C9FA53 /* TaskData.m */; };
+		66B7976827C68C5100C9FA53 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B7976727C68C5100C9FA53 /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,14 +26,20 @@
 		66B7973E27C6641A00C9FA53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		66B7974027C6641A00C9FA53 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		66B7974127C6641A00C9FA53 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		66B7974327C6641A00C9FA53 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		66B7974427C6641A00C9FA53 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		66B7974727C6641A00C9FA53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66B7974A27C6641A00C9FA53 /* ToDoList_OC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList_OC.xcdatamodel; sourceTree = "<group>"; };
 		66B7974C27C6641D00C9FA53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66B7974F27C6641D00C9FA53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66B7975127C6641D00C9FA53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66B7975227C6641D00C9FA53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66B7975D27C67BAD00C9FA53 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		66B7975E27C67BAD00C9FA53 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		66B7976027C67F7100C9FA53 /* TaskTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskTableViewCell.h; sourceTree = "<group>"; };
+		66B7976127C67F7100C9FA53 /* TaskTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewCell.m; sourceTree = "<group>"; };
+		66B7976327C683E800C9FA53 /* TaskData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskData.h; sourceTree = "<group>"; };
+		66B7976427C683E800C9FA53 /* TaskData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskData.m; sourceTree = "<group>"; };
+		66B7976627C68C5000C9FA53 /* ToDoList_OC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoList_OC-Bridging-Header.h"; sourceTree = "<group>"; };
+		66B7976727C68C5100C9FA53 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,20 +72,58 @@
 		66B7973C27C6641A00C9FA53 /* ToDoList_OC */ = {
 			isa = PBXGroup;
 			children = (
+				66B7975C27C6646900C9FA53 /* Storyboard */,
+				66B7975B27C6643900C9FA53 /* Model */,
+				66B7975A27C6643200C9FA53 /* Controller */,
+				66B7975927C6642B00C9FA53 /* View */,
 				66B7973D27C6641A00C9FA53 /* AppDelegate.h */,
 				66B7973E27C6641A00C9FA53 /* AppDelegate.m */,
 				66B7974027C6641A00C9FA53 /* SceneDelegate.h */,
 				66B7974127C6641A00C9FA53 /* SceneDelegate.m */,
-				66B7974327C6641A00C9FA53 /* ViewController.h */,
-				66B7974427C6641A00C9FA53 /* ViewController.m */,
-				66B7974627C6641A00C9FA53 /* Main.storyboard */,
 				66B7974C27C6641D00C9FA53 /* Assets.xcassets */,
-				66B7974E27C6641D00C9FA53 /* LaunchScreen.storyboard */,
 				66B7975127C6641D00C9FA53 /* Info.plist */,
 				66B7975227C6641D00C9FA53 /* main.m */,
 				66B7974927C6641A00C9FA53 /* ToDoList_OC.xcdatamodeld */,
 			);
 			path = ToDoList_OC;
+			sourceTree = "<group>";
+		};
+		66B7975927C6642B00C9FA53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66B7976027C67F7100C9FA53 /* TaskTableViewCell.h */,
+				66B7976127C67F7100C9FA53 /* TaskTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66B7975A27C6643200C9FA53 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				66B7975D27C67BAD00C9FA53 /* HomeViewController.h */,
+				66B7975E27C67BAD00C9FA53 /* HomeViewController.m */,
+				66B7976727C68C5100C9FA53 /* AddTaskViewController.swift */,
+				66B7976627C68C5000C9FA53 /* ToDoList_OC-Bridging-Header.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		66B7975B27C6643900C9FA53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66B7976327C683E800C9FA53 /* TaskData.h */,
+				66B7976427C683E800C9FA53 /* TaskData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66B7975C27C6646900C9FA53 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				66B7974627C6641A00C9FA53 /* Main.storyboard */,
+				66B7974E27C6641D00C9FA53 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +157,7 @@
 				TargetAttributes = {
 					66B7973927C6641A00C9FA53 = {
 						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -150,9 +198,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				66B7975327C6641D00C9FA53 /* main.m in Sources */,
-				66B7974527C6641A00C9FA53 /* ViewController.m in Sources */,
+				66B7976827C68C5100C9FA53 /* AddTaskViewController.swift in Sources */,
+				66B7976527C683E800C9FA53 /* TaskData.m in Sources */,
 				66B7973F27C6641A00C9FA53 /* AppDelegate.m in Sources */,
+				66B7976227C67F7100C9FA53 /* TaskTableViewCell.m in Sources */,
 				66B7974227C6641A00C9FA53 /* SceneDelegate.m in Sources */,
+				66B7975F27C67BAD00C9FA53 /* HomeViewController.m in Sources */,
 				66B7974B27C6641A00C9FA53 /* ToDoList_OC.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6AM223RC6B;
@@ -314,6 +366,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tsaisi7.ToDoList-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDoList_OC/Controller/ToDoList_OC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -323,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6AM223RC6B;
@@ -341,6 +397,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tsaisi7.ToDoList-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDoList_OC/Controller/ToDoList_OC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
