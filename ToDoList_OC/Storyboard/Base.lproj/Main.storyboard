@@ -34,9 +34,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGl-JE-h4a">
-                                                    <rect key="frame" x="318.33333333333331" y="26.666666666666671" width="19.666666666666686" height="22"/>
+                                                    <rect key="frame" x="318.66666666666669" y="26.666666666666671" width="19.333333333333314" height="22"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" image="circle" catalog="system"/>
+                                                    <state key="normal" image="square.dashed" catalog="system"/>
                                                 </button>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dQ-Lv-pOF">
                                                     <rect key="frame" x="20" y="49.666666666666664" width="131.66666666666666" height="14.333333333333336"/>
@@ -100,7 +100,7 @@
             </objects>
             <point key="canvasLocation" x="949.23076923076917" y="83.886255924170612"/>
         </scene>
-        <!--Add Task-->
+        <!--新增任務-->
         <scene sceneID="dmg-OI-raZ">
             <objects>
                 <viewController id="PZh-cE-fOO" customClass="AddTaskViewController" customModule="ToDoList_OC" customModuleProvider="target" sceneMemberID="viewController">
@@ -108,20 +108,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLt-Wb-27c">
-                                <rect key="frame" x="32" y="156" width="129.66666666666666" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任務名稱：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLt-Wb-27c">
+                                <rect key="frame" x="32.000000000000007" y="156" width="126.66666666666669" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taks Description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdg-1W-BJJ">
-                                <rect key="frame" x="32" y="260" width="188.66666666666666" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任務說明：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdg-1W-BJJ">
+                                <rect key="frame" x="32.000000000000007" y="260" width="126.66666666666669" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Time :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSa-eU-AKO">
-                                <rect key="frame" x="31.999999999999993" y="426" width="119.33333333333331" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任務時間：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSa-eU-AKO">
+                                <rect key="frame" x="32" y="426" width="127" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -173,8 +173,8 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="14x-Vk-3zQ">
                                 <rect key="frame" x="309" y="426" width="51" height="31"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJM-eZ-XWG">
-                                <rect key="frame" x="243.33333333333334" y="431.33333333333331" width="57.666666666666657" height="20.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提醒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJM-eZ-XWG">
+                                <rect key="frame" x="266.33333333333331" y="431.33333333333331" width="34.666666666666686" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -206,7 +206,7 @@
                             <constraint firstItem="pys-oc-3EB" firstAttribute="top" secondItem="yLt-Wb-27c" secondAttribute="bottom" constant="8" id="zvE-NC-hKW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Task" id="Vy4-ci-46d"/>
+                    <navigationItem key="navigationItem" title="新增任務" id="Vy4-ci-46d"/>
                     <connections>
                         <outlet property="remindSwitch" destination="14x-Vk-3zQ" id="LAF-vQ-0qa"/>
                         <outlet property="taskDatePicker" destination="8bc-HB-kVz" id="3f7-LK-dau"/>
@@ -218,7 +218,7 @@
             </objects>
             <point key="canvasLocation" x="1733.8461538461538" y="-590.04739336492889"/>
         </scene>
-        <!--Task Detail-->
+        <!--任務內容-->
         <scene sceneID="Ibe-gi-Eve">
             <objects>
                 <viewController id="MNa-ZT-6In" customClass="DetailViewController" customModule="ToDoList_OC" customModuleProvider="target" sceneMemberID="viewController">
@@ -226,20 +226,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sS7-Gt-L5o">
-                                <rect key="frame" x="32" y="156" width="129.66666666666666" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任務：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sS7-Gt-L5o">
+                                <rect key="frame" x="32" y="156" width="76" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taks Description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oll-1z-pIh">
-                                <rect key="frame" x="32" y="260" width="188.66666666666666" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任務說明：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oll-1z-pIh">
+                                <rect key="frame" x="32" y="260" width="127" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Time :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxg-XM-hbd">
-                                <rect key="frame" x="31.999999999999993" y="458" width="119.33333333333331" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任務時間：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxg-XM-hbd">
+                                <rect key="frame" x="32" y="458" width="127" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -271,8 +271,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzg-KU-ZUh">
-                                <rect key="frame" x="243.33333333333334" y="463.33333333333331" width="57.666666666666657" height="20.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提醒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzg-KU-ZUh">
+                                <rect key="frame" x="266.33333333333331" y="463.33333333333331" width="34.666666666666686" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -305,7 +305,7 @@
                             <constraint firstItem="2Ax-vO-fu4" firstAttribute="top" secondItem="oll-1z-pIh" secondAttribute="bottom" constant="8" id="xvO-Vu-Hi6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Task Detail" id="c4g-hh-5Fp">
+                    <navigationItem key="navigationItem" title="任務內容" id="c4g-hh-5Fp">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="NGn-od-ONm">
                             <connections>
                                 <segue destination="s9j-05-o1d" kind="show" identifier="editTask" id="xXl-ad-6y7"/>
@@ -313,6 +313,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="editButton" destination="NGn-od-ONm" id="o9h-SC-juk"/>
                         <outlet property="remindSwitch" destination="jdD-64-jch" id="siK-eD-wk0"/>
                         <outlet property="taskDateTextField" destination="ARS-e3-evg" id="Tbm-rU-lio"/>
                         <outlet property="taskDescriptionTextView" destination="2Ax-vO-fu4" id="VrQ-XY-qUF"/>
@@ -323,7 +324,7 @@
             </objects>
             <point key="canvasLocation" x="1734" y="84"/>
         </scene>
-        <!--Edit Task-->
+        <!--編輯任務-->
         <scene sceneID="1SL-Ij-A1t">
             <objects>
                 <viewController id="s9j-05-o1d" customClass="EditViewController" sceneMemberID="viewController">
@@ -331,20 +332,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0g-2c-HUC">
-                                <rect key="frame" x="32" y="172" width="129.66666666666666" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任務：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0g-2c-HUC">
+                                <rect key="frame" x="32" y="172" width="76" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taks Description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bue-JI-KJr">
-                                <rect key="frame" x="32" y="276" width="188.66666666666666" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任務說明：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bue-JI-KJr">
+                                <rect key="frame" x="32.000000000000007" y="276" width="126.66666666666669" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Time :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WE-gK-N3V">
-                                <rect key="frame" x="31.999999999999993" y="474" width="119.33333333333331" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任務時間：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WE-gK-N3V">
+                                <rect key="frame" x="32" y="474" width="127" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -383,8 +384,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyS-wg-8hw">
-                                <rect key="frame" x="243.33333333333334" y="479.33333333333331" width="57.666666666666657" height="20.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提醒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyS-wg-8hw">
+                                <rect key="frame" x="266.33333333333331" y="479.33333333333331" width="34.666666666666686" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -416,8 +417,12 @@
                             <constraint firstItem="yap-z3-n16" firstAttribute="leading" secondItem="eyS-wg-8hw" secondAttribute="trailing" constant="8" id="z8I-WJ-0lS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit Task" id="zgK-VB-hI0">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Yhd-pj-Tys"/>
+                    <navigationItem key="navigationItem" title="編輯任務" id="zgK-VB-hI0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Yhd-pj-Tys">
+                            <connections>
+                                <action selector="editTask:" destination="s9j-05-o1d" id="5BD-nj-Q2R"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="remindSwitch" destination="yap-z3-n16" id="T84-mr-l4n"/>
@@ -450,7 +455,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="square.dashed" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -20,18 +20,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+
+    [self readData];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
+    self.controller.delegate = self;
+
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+
+- (void)readData{
     self.appDelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
     self.manageObjectContext = [[self.appDelegate persistentContainer]viewContext];
     self.fetchRequest = [[NSFetchRequest<TaskData *> alloc]initWithEntityName:@"TaskData"];
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"time" ascending:YES];
     NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     [self.fetchRequest setSortDescriptors:sortDescriptors];
-    
     self.controller = [[NSFetchedResultsController<TaskData *> alloc]initWithFetchRequest:self.fetchRequest managedObjectContext:self.manageObjectContext sectionNameKeyPath:nil cacheName:nil];
-    self.controller.delegate = self;
     NSError *error;
     [self.controller performFetch: &error];
 }
@@ -46,7 +54,8 @@
     }
 }
 
-- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller{
+- (void)controllerDidChangeContent:(NSFetchedResultsController<TaskData *> *)controller{
+    NSLog(@"%lu",(unsigned long)[[self.controller fetchedObjects]count]);
     [self.tableView reloadData];
 }
 
@@ -59,7 +68,9 @@
     NSString *time = [dateFormatter stringFromDate:taskData.time];
     cell.taskNameLabel.text = taskData.name;
     cell.taskTimeLabel.text = time;
-
+    if (taskData.isDone){
+        [cell.doneButton setImage:[UIImage systemImageNamed:@"app.badge.checkmark.fill"] forState:UIControlStateNormal];
+    }
     return cell;
 }
 
@@ -68,8 +79,8 @@
 }
 
 - (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath{
+    TaskData *taskData = [self.controller objectAtIndexPath:indexPath];
     UIContextualAction *deleteAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleDestructive title:nil handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
-        TaskData *taskData = [self.controller objectAtIndexPath:indexPath];
         [self.manageObjectContext deleteObject:taskData];
         NSError *error;
         [self.manageObjectContext save:&error];
@@ -77,7 +88,17 @@
     }];
     deleteAction.image = [UIImage systemImageNamed:@"trash"];
     deleteAction.backgroundColor = UIColor.systemRedColor;
-    UISwipeActionsConfiguration *configuration = [UISwipeActionsConfiguration configurationWithActions:@[deleteAction]];
+    
+    UIContextualAction *doneAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleDestructive title:nil handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
+        taskData.isDone = YES;
+        NSError *error;
+        [self.manageObjectContext save:&error];
+        completionHandler(YES);
+    }];
+    doneAction.image = [UIImage systemImageNamed:@"app.badge.checkmark.fill"];
+    doneAction.backgroundColor = UIColor.systemGreenColor;
+    
+    UISwipeActionsConfiguration *configuration = [UISwipeActionsConfiguration configurationWithActions:@[deleteAction,doneAction]];
     configuration.performsFirstActionWithFullSwipe = NO;
     return configuration;
 }

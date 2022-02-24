@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) AppDelegate *appDelegate;
 @property (nonatomic) NSManagedObjectContext *manageObjectContext;
 @property (nonatomic) NSFetchRequest *fetchRequest;
-@property (nonatomic) NSEntityDescription *entity;
 @property (nonatomic) NSFetchedResultsController *controller;
 
 @end

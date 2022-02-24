@@ -36,7 +36,7 @@ class AddTaskViewController: UIViewController {
     }
     
     @IBAction func saveTask(_ sender: Any){
-        guard let taskName = taskNameTextField.text, taskName != "",let taskDescription = taskDescriptionTextView.text, taskDescription != "" else {
+        guard let taskName = taskNameTextField.text, taskName != "",let taskDescription = taskDescriptionTextView.text else {
             alertMessage(title: "提醒", message: "請輸入完整資料")
             return
         }
@@ -46,6 +46,7 @@ class AddTaskViewController: UIViewController {
         taskData.taskDescription = taskDescription
         taskData.time = taskDatePicker.date
         taskData.isDone = false
+        taskData.remind = self.remindSwitch.isOn
         if viewContext.hasChanges {
             do {
                 try viewContext.save()

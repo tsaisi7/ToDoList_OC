@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIDatePicker *taskDatePicker;
 @property (weak, nonatomic) IBOutlet UISwitch *remindSwitch;
 @property (weak, nonatomic) NSIndexPath *indexPath;
+@property (nonatomic) AppDelegate *appDelegate;
+@property (nonatomic) NSManagedObjectContext *manageObjectContext;
+@property (nonatomic) NSFetchRequest *fetchRequest;
+@property (nonatomic) NSFetchedResultsController *controller;
 
 @end
 

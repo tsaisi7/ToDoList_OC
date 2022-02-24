@@ -13,9 +13,10 @@
 + (NSFetchRequest<TaskData *> *)fetchRequest {
 	return [NSFetchRequest fetchRequestWithEntityName:@"TaskData"];
 }
-@dynamic remind;
+
 @dynamic isDone;
 @dynamic name;
+@dynamic remind;
 @dynamic taskDescription;
 @dynamic time;
 
