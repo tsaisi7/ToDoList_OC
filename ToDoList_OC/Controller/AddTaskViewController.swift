@@ -41,7 +41,7 @@ class AddTaskViewController: UIViewController {
             return
         }
         let taskData = NSEntityDescription.insertNewObject(forEntityName: "TaskData", into: viewContext) as! TaskData
-        
+        taskData.id = UUID()
         taskData.name = taskName
         taskData.taskDescription = taskDescription
         taskData.time = taskDatePicker.date

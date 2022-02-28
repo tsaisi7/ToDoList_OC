@@ -2,7 +2,7 @@
 //  TaskData+CoreDataProperties.h
 //  ToDoList_OC
 //
-//  Created by Adam Liu on 2022/2/24.
+//  Created by Adam Liu on 2022/2/26.
 //
 //
 
@@ -15,11 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<TaskData *> *)fetchRequest NS_SWIFT_NAME(fetchRequest());
 
-@property (nonatomic) BOOL remind;
 @property (nonatomic) BOOL isDone;
 @property (nullable, nonatomic, copy) NSString *name;
+@property (nonatomic) BOOL remind;
 @property (nullable, nonatomic, copy) NSString *taskDescription;
 @property (nullable, nonatomic, copy) NSDate *time;
+@property (nullable, nonatomic, copy) NSUUID *id;
 
 @end
 

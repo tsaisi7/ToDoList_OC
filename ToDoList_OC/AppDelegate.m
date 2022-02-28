@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "ToDoList_OC-Bridging-Header.h"
+@import UserNotifications;
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    [center requestAuthorizationWithOptions:UNAuthorizationOptionAlert + UNAuthorizationOptionSound + UNAuthorizationOptionBadge completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        if (granted == YES){
+            NSLog(@"接受授權");
+        }else{
+            NSLog(@"拒絕授權");
+        }
+    }];
     return YES;
 }
 

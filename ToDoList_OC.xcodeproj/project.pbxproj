@@ -11,6 +11,7 @@
 		28AD223B27C7185A005626A3 /* TaskData+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD223927C7185A005626A3 /* TaskData+CoreDataProperties.m */; };
 		28AD223D27C749FB005626A3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD223C27C749FB005626A3 /* DetailViewController.swift */; };
 		28AD224027C75B3F005626A3 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD223F27C75B3F005626A3 /* EditViewController.m */; };
+		6621A3B227CA1ABD0096FDAD /* TaskData+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6621A3B127CA1ABD0096FDAD /* TaskData+CoreDataProperties.m */; };
 		66B7973F27C6641A00C9FA53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B7973E27C6641A00C9FA53 /* AppDelegate.m */; };
 		66B7974227C6641A00C9FA53 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B7974127C6641A00C9FA53 /* SceneDelegate.m */; };
 		66B7974827C6641A00C9FA53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B7974627C6641A00C9FA53 /* Main.storyboard */; };
@@ -31,6 +32,8 @@
 		28AD223C27C749FB005626A3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		28AD223E27C75B3F005626A3 /* EditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		28AD223F27C75B3F005626A3 /* EditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		6621A3B027CA1ABD0096FDAD /* TaskData+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaskData+CoreDataProperties.h"; sourceTree = "<group>"; };
+		6621A3B127CA1ABD0096FDAD /* TaskData+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TaskData+CoreDataProperties.m"; sourceTree = "<group>"; };
 		66B7973A27C6641A00C9FA53 /* ToDoList_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B7973D27C6641A00C9FA53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66B7973E27C6641A00C9FA53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 		66B7975B27C6643900C9FA53 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6621A3B027CA1ABD0096FDAD /* TaskData+CoreDataProperties.h */,
+				6621A3B127CA1ABD0096FDAD /* TaskData+CoreDataProperties.m */,
 				28AD223627C7185A005626A3 /* TaskData+CoreDataProperties.h */,
 				28AD223727C7185A005626A3 /* TaskData+CoreDataClass.h */,
 				28AD223827C7185A005626A3 /* TaskData+CoreDataClass.m */,
@@ -214,6 +219,7 @@
 				66B7976827C68C5100C9FA53 /* AddTaskViewController.swift in Sources */,
 				28AD223B27C7185A005626A3 /* TaskData+CoreDataProperties.m in Sources */,
 				28AD223A27C7185A005626A3 /* TaskData+CoreDataClass.m in Sources */,
+				6621A3B227CA1ABD0096FDAD /* TaskData+CoreDataProperties.m in Sources */,
 				66B7973F27C6641A00C9FA53 /* AppDelegate.m in Sources */,
 				66B7976227C67F7100C9FA53 /* TaskTableViewCell.m in Sources */,
 				66B7974227C6641A00C9FA53 /* SceneDelegate.m in Sources */,

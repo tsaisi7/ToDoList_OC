@@ -2,7 +2,7 @@
 //  TaskData+CoreDataProperties.m
 //  ToDoList_OC
 //
-//  Created by Adam Liu on 2022/2/24.
+//  Created by Adam Liu on 2022/2/26.
 //
 //
 
@@ -19,5 +19,6 @@
 @dynamic remind;
 @dynamic taskDescription;
 @dynamic time;
+@dynamic id;
 
 @end
